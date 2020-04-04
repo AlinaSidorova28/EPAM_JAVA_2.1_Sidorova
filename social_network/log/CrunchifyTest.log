@@ -116,3 +116,51 @@ Finish
 2020-04-04 11:13:20 [main] INFO  Main:51 - Finish
 2020-04-04 11:15:51 [main] INFO  Main:20 - Start
 2020-04-04 11:15:51 [main] INFO  Main:51 - Finish
+2020-04-04 22:10:56 [main] INFO  Main:20 - Start
+2020-04-04 22:10:58 [main] INFO  UserHandler:41 - Time spent with parallel stream: 79 milliseconds
+2020-04-04 22:10:58 [main] INFO  Main:51 - Finish
+2020-04-04 22:13:50 [main] INFO  Main:20 - Start
+2020-04-04 22:13:50 [main] INFO  UserHandler:19 - Time spent with simple stream: 0 milliseconds
+2020-04-04 22:13:50 [main] INFO  UserHandler:43 - Time spent with parallel stream: 0 milliseconds
+2020-04-04 22:13:51 [main] INFO  Main:51 - Finish
+2020-04-04 22:15:23 [main] INFO  Main:20 - Start
+2020-04-04 22:15:23 [main] INFO  UserHandler:43 - Time spent with parallel stream: 0 milliseconds
+2020-04-04 22:15:23 [main] INFO  Main:51 - Finish
+2020-04-04 22:16:52 [main] INFO  Main:20 - Start
+2020-04-04 22:16:52 [main] INFO  UserHandler:43 - Time spent with parallel stream: 0 milliseconds
+2020-04-04 22:16:52 [main] INFO  Main:51 - Finish
+2020-04-04 22:18:49 [main] INFO  Main:20 - Start
+2020-04-04 22:18:50 [main] INFO  UserHandler:43 - Time spent with parallel stream: 4 milliseconds
+2020-04-04 22:18:50 [main] INFO  Main:51 - Finish
+2020-04-04 22:19:29 [main] INFO  Main:20 - Start
+2020-04-04 22:19:29 [main] INFO  UserHandler:20 - Time spent with simple stream: 2 milliseconds
+2020-04-04 22:19:29 [main] INFO  UserHandler:44 - Time spent with parallel stream: 0 milliseconds
+2020-04-04 22:19:29 [main] INFO  Main:51 - Finish
+2020-04-04 22:20:34 [main] INFO  Main:20 - Start
+2020-04-04 22:20:35 [main] INFO  UserHandler:29 - Time spent with simple stream: 16 milliseconds
+2020-04-04 22:20:35 [main] INFO  UserHandler:47 - Time spent with parallel stream: 16 milliseconds
+2020-04-04 22:20:35 [main] INFO  Main:51 - Finish
+2020-04-04 22:20:48 [main] INFO  Main:20 - Start
+2020-04-04 22:20:49 [main] INFO  UserHandler:29 - Time spent with simple stream: 0 milliseconds
+2020-04-04 22:20:49 [main] INFO  UserHandler:47 - Time spent with parallel stream: 0 milliseconds
+2020-04-04 22:20:49 [main] INFO  Main:51 - Finish
+2020-04-04 22:21:16 [main] INFO  Main:20 - Start
+2020-04-04 22:21:16 [main] INFO  UserHandler:20 - Time spent with simple stream: 0 milliseconds
+2020-04-04 22:21:16 [main] INFO  UserHandler:44 - Time spent with parallel stream: 0 milliseconds
+2020-04-04 22:21:16 [main] INFO  Main:51 - Finish
+2020-04-04 22:23:44 [main] INFO  Main:20 - Start
+2020-04-04 22:23:44 [main] INFO  UserHandler:20 - Time spent with simple stream: 0 milliseconds
+2020-04-04 22:23:44 [main] INFO  UserHandler:44 - Time spent with parallel stream: 0 milliseconds
+2020-04-04 22:23:44 [main] INFO  Main:51 - Finish
+2020-04-04 22:24:16 [main] INFO  Main:20 - Start
+2020-04-04 22:24:16 [main] INFO  UserHandler:29 - Time spent with simple stream: 17 milliseconds
+2020-04-04 22:24:16 [main] INFO  UserHandler:47 - Time spent with parallel stream: 4 milliseconds
+2020-04-04 22:24:16 [main] INFO  Main:51 - Finish
+2020-04-04 22:25:07 [main] INFO  Main:20 - Start
+2020-04-04 22:25:07 [main] INFO  UserHandler:29 - Time spent with simple stream: 0 milliseconds
+2020-04-04 22:25:07 [main] INFO  UserHandler:47 - Time spent with parallel stream: 0 milliseconds
+2020-04-04 22:25:07 [main] INFO  Main:51 - Finish
+2020-04-04 22:26:34 [main] INFO  Main:20 - Start
+2020-04-04 22:26:34 [main] INFO  UserHandler:27 - Time spent with simple stream: 0 milliseconds
+2020-04-04 22:26:34 [main] INFO  UserHandler:37 - Time spent with parallel stream: 0 milliseconds
+2020-04-04 22:26:34 [main] INFO  Main:51 - Finish
