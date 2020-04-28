@@ -971,3 +971,293 @@ java.io.EOFException: null
 2020-03-27 15:19:22 [main] INFO  Operations:62 - Payment succeed
 2020-03-27 15:19:27 [main] INFO  ClientMenu:64 - Changes saved
 2020-04-04 13:09:17 [main] INFO  Main:13 - Start
+2020-04-26 23:21:12 [main] INFO  Main:14 - Start
+2020-04-26 23:46:20 [main] INFO  Main:14 - Start
+2020-04-26 23:50:09 [main] INFO  Main:14 - Start
+2020-04-27 00:15:04 [main] INFO  Main:14 - Start
+2020-04-27 00:33:08 [main] INFO  Main:14 - Start
+2020-04-27 01:15:56 [main] INFO  Main:14 - Start
+2020-04-27 01:29:45 [main] INFO  Main:15 - Start
+2020-04-27 01:33:27 [main] INFO  Main:15 - Start
+2020-04-27 01:48:10 [main] INFO  Main:14 - Start
+2020-04-27 09:47:13 [main] INFO  Main:14 - Start
+2020-04-27 09:58:33 [main] INFO  Main:14 - Start
+2020-04-27 10:00:51 [main] INFO  Main:14 - Start
+2020-04-27 10:00:54 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:00:54 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:00:54 [main] INFO  Main:45 - =========================================
+2020-04-27 10:01:40 [main] INFO  Main:14 - Start
+2020-04-27 10:01:42 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:01:42 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:01:42 [main] INFO  Main:45 - =========================================
+2020-04-27 10:02:52 [main] INFO  Main:14 - Start
+2020-04-27 10:02:56 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:02:56 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:02:56 [main] INFO  Main:45 - =========================================
+2020-04-27 10:04:10 [main] INFO  Main:14 - Start
+2020-04-27 10:04:13 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:04:13 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:04:13 [main] INFO  Main:45 - =========================================
+2020-04-27 10:06:43 [main] INFO  Main:14 - Start
+2020-04-27 10:06:47 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:06:47 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:06:47 [main] INFO  Main:45 - =========================================
+2020-04-27 10:10:50 [main] INFO  Main:14 - Start
+2020-04-27 10:10:56 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:10:56 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:10:56 [main] INFO  Main:45 - =========================================
+2020-04-27 10:12:05 [main] INFO  Main:14 - Start
+2020-04-27 10:12:10 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:12:10 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:12:10 [main] INFO  Main:45 - =========================================
+2020-04-27 10:14:56 [main] INFO  Main:14 - Start
+2020-04-27 10:15:01 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:15:01 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:15:01 [main] INFO  Main:45 - =========================================
+2020-04-27 10:15:27 [main] INFO  Main:14 - Start
+2020-04-27 10:15:32 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:15:32 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:15:32 [main] INFO  Main:45 - =========================================
+2020-04-27 10:15:57 [main] INFO  Main:14 - Start
+2020-04-27 10:16:02 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:16:02 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:16:02 [main] INFO  Main:45 - =========================================
+2020-04-27 10:16:35 [main] INFO  Main:14 - Start
+2020-04-27 10:16:38 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:16:38 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:16:38 [main] INFO  Main:45 - =========================================
+2020-04-27 10:16:54 [main] INFO  Main:14 - Start
+2020-04-27 10:16:57 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:16:57 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:16:57 [main] INFO  Main:45 - =========================================
+2020-04-27 10:18:11 [main] INFO  Main:14 - Start
+2020-04-27 10:18:16 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:18:16 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:18:16 [main] INFO  Main:45 - =========================================
+2020-04-27 10:23:07 [main] INFO  Main:14 - Start
+2020-04-27 10:23:10 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:23:10 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:23:10 [main] INFO  Main:45 - =========================================
+2020-04-27 10:32:22 [main] INFO  Main:14 - Start
+2020-04-27 10:32:29 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:32:29 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:32:29 [main] INFO  Main:45 - =========================================
+2020-04-27 10:33:16 [main] INFO  Main:14 - Start
+2020-04-27 10:33:21 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:33:21 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:33:21 [main] INFO  Main:45 - =========================================
+2020-04-27 10:38:40 [main] INFO  Main:14 - Start
+2020-04-27 10:38:46 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:38:46 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:38:46 [main] INFO  Main:45 - =========================================
+2020-04-27 10:39:13 [main] INFO  Main:14 - Start
+2020-04-27 10:39:15 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:39:15 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:39:15 [main] INFO  Main:45 - =========================================
+2020-04-27 10:39:57 [main] INFO  Main:14 - Start
+2020-04-27 10:39:59 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:39:59 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:39:59 [main] INFO  Main:45 - =========================================
+2020-04-27 10:42:54 [main] INFO  Main:14 - Start
+2020-04-27 10:42:56 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 10:42:56 [main] INFO  Main:44 - Query data example:
+2020-04-27 10:42:56 [main] INFO  Main:45 - =========================================
+2020-04-27 11:01:35 [main] INFO  Main:14 - Start
+2020-04-27 11:02:08 [main] INFO  Main:14 - Start
+2020-04-27 11:02:14 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 11:02:14 [main] INFO  Main:44 - Query data example:
+2020-04-27 11:02:14 [main] INFO  Main:45 - =========================================
+2020-04-27 11:02:49 [main] INFO  Main:14 - Start
+2020-04-27 11:02:54 [main] INFO  Main:42 - Successful connection - Schema: dbo
+2020-04-27 11:02:54 [main] INFO  Main:44 - Query data example:
+2020-04-27 11:02:54 [main] INFO  Main:45 - =========================================
+2020-04-27 11:12:34 [main] INFO  Main:15 - Start
+2020-04-27 11:17:21 [main] INFO  Main:16 - Start
+2020-04-27 11:34:54 [main] INFO  Main:17 - Start
+2020-04-27 11:58:12 [main] INFO  Main:17 - Start
+2020-04-27 12:01:13 [main] INFO  Main:17 - Start
+2020-04-27 12:35:38 [main] INFO  Main:14 - Start
+2020-04-27 12:59:49 [main] INFO  Main:14 - Start
+2020-04-27 13:00:46 [main] INFO  Main:14 - Start
+2020-04-27 13:04:47 [main] INFO  Main:14 - Start
+2020-04-27 13:05:29 [main] INFO  Main:14 - Start
+2020-04-27 13:06:31 [main] INFO  Main:14 - Start
+2020-04-27 13:09:44 [main] INFO  Main:14 - Start
+2020-04-27 13:15:42 [main] INFO  Main:14 - Start
+2020-04-27 13:19:15 [main] INFO  Main:14 - Start
+2020-04-27 13:31:45 [main] INFO  Main:14 - Start
+2020-04-27 13:32:58 [main] INFO  Main:14 - Start
+2020-04-27 13:33:28 [main] INFO  ChefMenu:42 - Dish was successfully added
+2020-04-27 13:54:01 [main] INFO  Main:14 - Start
+2020-04-27 14:06:05 [main] INFO  Main:14 - Start
+2020-04-27 14:06:42 [main] ERROR InfoReader:73 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:250ad52d-e817-411f-9441-3d6ca0b248b6".
+2020-04-27 14:07:48 [main] INFO  Main:14 - Start
+2020-04-27 14:08:24 [main] INFO  ChefMenu:54 - Changes saved
+2020-04-27 14:09:24 [main] INFO  Main:14 - Start
+2020-04-27 14:21:43 [main] INFO  Main:14 - Start
+2020-04-27 14:22:06 [main] ERROR InfoReader:73 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:f9d60dbe-96e6-4433-871c-d0f2494536c4".
+2020-04-27 14:23:20 [main] INFO  Main:14 - Start
+2020-04-27 14:27:34 [main] INFO  Main:14 - Start
+2020-04-27 14:28:16 [main] INFO  ChefMenu:54 - Changes saved
+2020-04-27 14:29:00 [main] INFO  Main:14 - Start
+2020-04-27 14:29:15 [main] ERROR InfoReader:73 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "SQL Server не вернул ответ. Соединение было закрыто. ClientConnectionId:fa9d781a-740e-4208-bd91-0d9ec8bcfc4f".
+2020-04-27 14:29:40 [main] INFO  Main:14 - Start
+2020-04-27 14:30:02 [main] ERROR InfoReader:73 - com.microsoft.sqlserver.jdbc.SQLServerException: Не удалось установить соединение TCP/IP к серверу french-restaurant.database.windows.net по порту 1433. Ошибка: "connect timed out. Проверьте свойства соединения. Убедитесь, что на сервере запущен экземпляр SQL Server и он принимает TCP/IP-соединения по порту. Убедитесь, что TCP-соединения по этому порту не блокируются брандмауэром.".
+2020-04-27 14:31:04 [main] INFO  Main:14 - Start
+2020-04-27 14:32:37 [main] ERROR InfoReader:73 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:1aa7c951-24a9-4549-9f3b-3589557a85c4".
+2020-04-27 14:33:43 [main] INFO  Main:14 - Start
+2020-04-27 14:35:08 [main] INFO  Main:14 - Start
+2020-04-27 14:35:56 [main] INFO  ChefMenu:45 - Dish was successfully added
+2020-04-27 14:36:30 [main] INFO  ChefMenu:54 - Changes saved
+2020-04-27 14:37:58 [main] INFO  Main:14 - Start
+2020-04-27 14:38:30 [main] INFO  ChefMenu:45 - Dish was successfully added
+2020-04-27 14:38:44 [main] INFO  ChefMenu:54 - Changes saved
+2020-04-27 14:41:04 [main] INFO  Main:14 - Start
+2020-04-27 14:41:32 [main] INFO  ChefMenu:54 - Changes saved
+2020-04-27 15:03:56 [main] INFO  Main:14 - Start
+2020-04-27 15:04:18 [main] ERROR InfoReader:70 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:35572cf0-fa96-4ed6-8382-a013e2b0d8db".
+2020-04-27 15:04:34 [main] INFO  Main:14 - Start
+2020-04-27 15:06:18 [main] INFO  Main:14 - Start
+2020-04-27 15:06:41 [main] INFO  Main:14 - Start
+2020-04-27 15:07:38 [main] INFO  Main:14 - Start
+2020-04-27 15:09:44 [main] INFO  Main:14 - Start
+2020-04-27 15:21:12 [main] INFO  Main:14 - Start
+2020-04-27 15:21:31 [main] ERROR InfoReader:70 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:81020555-d320-44f3-856b-5b96c984b796".
+2020-04-27 15:21:55 [main] INFO  Main:14 - Start
+2020-04-27 15:26:53 [main] INFO  Main:14 - Start
+2020-04-27 15:32:24 [main] ERROR InfoReader:70 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:c46cb3f6-3064-4b99-a497-3a297933ff3b".
+2020-04-27 15:32:58 [main] INFO  Main:14 - Start
+2020-04-27 15:46:41 [main] INFO  Main:14 - Start
+2020-04-27 15:47:13 [main] ERROR InfoReader:70 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "SQL Server не вернул ответ. Соединение было закрыто. ClientConnectionId:07479a0a-86a0-4299-b7f8-ba19c5c92530".
+2020-04-27 15:47:40 [main] INFO  Main:14 - Start
+2020-04-27 15:50:59 [main] INFO  Main:14 - Start
+2020-04-27 15:51:56 [main] INFO  Main:14 - Start
+2020-04-27 15:53:47 [main] INFO  Main:14 - Start
+2020-04-27 15:57:32 [main] INFO  Main:14 - Start
+2020-04-27 15:58:12 [main] INFO  Main:14 - Start
+2020-04-27 15:59:02 [main] INFO  Main:14 - Start
+2020-04-27 16:00:07 [main] INFO  Main:14 - Start
+2020-04-27 16:00:35 [main] INFO  ChefMenu:54 - Changes saved
+2020-04-27 16:04:55 [main] INFO  Main:14 - Start
+2020-04-27 16:05:17 [main] ERROR InfoReader:70 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:8f3bd509-e244-4e36-afc6-e4e769dd4d76".
+2020-04-27 16:05:24 [main] INFO  Main:14 - Start
+2020-04-27 16:05:52 [main] INFO  Main:14 - Start
+2020-04-27 16:08:46 [main] INFO  ChefMenu:54 - Changes saved
+2020-04-27 17:24:27 [main] INFO  Main:14 - Start
+2020-04-27 17:25:06 [main] ERROR InfoReader:70 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:fd80cde0-4574-4d51-bec6-92f7850f1e27".
+2020-04-27 17:26:16 [main] INFO  Main:14 - Start
+2020-04-27 17:27:25 [main] INFO  AdminMenu:68 - Changes saved
+2020-04-27 17:45:56 [main] INFO  Main:14 - Start
+2020-04-27 17:50:57 [main] INFO  AdminMenu:67 - Changes saved
+2020-04-27 18:06:27 [main] INFO  Main:14 - Start
+2020-04-27 18:07:36 [main] INFO  Main:14 - Start
+2020-04-27 18:08:12 [main] INFO  Main:14 - Start
+2020-04-27 18:14:37 [main] INFO  Main:14 - Start
+2020-04-27 18:15:25 [main] INFO  Main:14 - Start
+2020-04-27 18:17:35 [main] INFO  Main:14 - Start
+2020-04-27 18:19:18 [main] INFO  Main:14 - Start
+2020-04-27 18:20:01 [main] INFO  Main:14 - Start
+2020-04-27 18:21:54 [main] INFO  AdminMenu:67 - Changes saved
+2020-04-27 18:41:08 [main] INFO  Main:16 - Start
+2020-04-27 18:48:37 [main] INFO  Main:16 - Start
+2020-04-27 18:49:07 [main] INFO  Main:16 - Start
+2020-04-27 18:53:08 [main] INFO  Main:16 - Start
+2020-04-27 18:54:30 [main] INFO  Main:16 - Start
+2020-04-27 19:11:17 [main] INFO  Main:16 - Start
+2020-04-27 19:13:28 [main] INFO  Main:16 - Start
+2020-04-27 19:14:42 [main] INFO  Main:16 - Start
+2020-04-27 19:16:13 [main] INFO  Main:16 - Start
+2020-04-27 19:16:30 [main] INFO  Main:16 - Start
+2020-04-27 19:16:44 [main] INFO  OrderDaoImpl:81 - Order is deleted
+2020-04-27 19:23:00 [main] INFO  Main:16 - Start
+2020-04-27 19:24:26 [main] INFO  Main:16 - Start
+2020-04-27 19:24:40 [main] INFO  OrderDaoImpl:81 - Order is deleted
+2020-04-27 19:31:57 [main] INFO  Main:16 - Start
+2020-04-27 19:34:33 [main] INFO  Main:16 - Start
+2020-04-27 19:34:53 [main] INFO  OrderDaoImpl:82 - Order is deleted
+2020-04-27 19:36:07 [main] INFO  AdminMenu:67 - Changes saved
+2020-04-27 19:38:05 [main] INFO  ChefMenu:45 - Changes saved
+2020-04-27 19:42:36 [main] INFO  Main:16 - Start
+2020-04-27 20:06:37 [main] INFO  Main:16 - Start
+2020-04-27 20:46:13 [main] INFO  Main:17 - Start
+2020-04-27 20:48:43 [main] INFO  Main:17 - Start
+2020-04-27 20:49:03 [main] INFO  Main:17 - Start
+2020-04-27 22:04:20 [main] INFO  Main:17 - Start
+2020-04-27 22:06:57 [main] INFO  Main:17 - Start
+2020-04-27 22:07:16 [main] INFO  OrderDaoImpl:127 - Order is updated
+2020-04-27 22:10:29 [main] INFO  Main:17 - Start
+2020-04-27 22:10:51 [main] INFO  OrderDaoImpl:74 - Order is created
+2020-04-27 22:13:35 [main] INFO  Main:17 - Start
+2020-04-27 22:14:12 [main] INFO  Main:17 - Start
+2020-04-27 22:14:42 [main] INFO  OrderDaoImpl:75 - Order is created
+2020-04-27 22:36:51 [main] INFO  Main:17 - Start
+2020-04-27 22:38:12 [main] INFO  OrderDaoImpl:57 - Order is created
+2020-04-27 22:40:31 [main] INFO  Main:17 - Start
+2020-04-27 22:41:01 [main] INFO  OrderDaoImpl:131 - Order is updated
+2020-04-27 23:37:40 [main] INFO  Main:17 - Start
+2020-04-27 23:38:03 [main] INFO  Main:17 - Start
+2020-04-28 00:13:20 [main] INFO  Main:17 - Start
+2020-04-28 00:13:31 [main] ERROR InfoReader:80 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:a02a9df3-4615-4ddd-ab4b-ee48ebe6c8b7".
+2020-04-28 00:13:41 [main] INFO  Main:17 - Start
+2020-04-28 00:39:19 [main] INFO  Main:17 - Start
+2020-04-28 00:39:28 [main] ERROR InfoReader:80 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:d5e19674-0b19-48f4-a246-73005230810b".
+2020-04-28 00:39:57 [main] INFO  Main:17 - Start
+2020-04-28 00:41:19 [main] INFO  Main:17 - Start
+2020-04-28 00:46:30 [main] INFO  Main:17 - Start
+2020-04-28 00:46:39 [main] ERROR InfoReader:80 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:08197a28-9756-4043-9f53-683ed88efabb".
+2020-04-28 00:46:48 [main] INFO  Main:17 - Start
+2020-04-28 00:55:21 [main] INFO  Main:17 - Start
+2020-04-28 01:00:27 [main] INFO  Main:17 - Start
+2020-04-28 01:01:17 [main] INFO  Main:17 - Start
+2020-04-28 01:07:24 [main] INFO  Main:17 - Start
+2020-04-28 01:07:56 [main] INFO  Main:17 - Start
+2020-04-28 01:09:12 [main] INFO  Main:17 - Start
+2020-04-28 01:10:17 [main] INFO  Main:17 - Start
+2020-04-28 01:11:12 [main] INFO  Main:17 - Start
+2020-04-28 01:11:21 [main] ERROR InfoReader:80 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset by peer: socket write error ClientConnectionId:bfa3717f-577a-4729-9f0f-965581551a72".
+2020-04-28 01:11:32 [main] INFO  Main:17 - Start
+2020-04-28 01:12:07 [main] INFO  Main:17 - Start
+2020-04-28 01:13:09 [main] INFO  Main:17 - Start
+2020-04-28 01:13:55 [main] INFO  Main:17 - Start
+2020-04-28 01:15:01 [main] INFO  Main:17 - Start
+2020-04-28 01:16:08 [main] INFO  Main:17 - Start
+2020-04-28 01:16:26 [main] ERROR InfoReader:80 - com.microsoft.sqlserver.jdbc.SQLServerException: Драйверу не удалось установить безопасное соединение с SQL Server, используя шифрование SSL. Ошибка: "Connection reset ClientConnectionId:cb7354e7-224f-4e12-aaf4-401f4b288243".
+2020-04-28 01:16:33 [main] INFO  Main:17 - Start
+2020-04-28 01:16:59 [main] INFO  Main:17 - Start
+2020-04-28 01:18:39 [main] INFO  Main:17 - Start
+2020-04-28 01:18:57 [main] INFO  Main:17 - Start
+2020-04-28 01:19:39 [main] INFO  OrderDaoImpl:115 - Order is updated
+2020-04-28 01:21:59 [main] INFO  Main:17 - Start
+2020-04-28 01:22:57 [main] INFO  ChefMenu:45 - Changes saved
+2020-04-28 01:23:54 [main] INFO  OrderDaoImpl:88 - Order is deleted
+2020-04-28 01:24:13 [main] INFO  AdminMenu:67 - Changes saved
+2020-04-28 01:24:46 [main] INFO  OrderDaoImpl:59 - Order is created
+2020-04-28 01:25:14 [main] INFO  OrderDaoImpl:115 - Order is updated
+2020-04-28 16:14:50 [main] INFO  Main:17 - Start
+2020-04-28 16:16:06 [main] INFO  OrderDaoImpl:115 - Order is updated
+2020-04-28 17:15:07 [main] INFO  Main:17 - Start
+2020-04-28 17:48:05 [main] INFO  Main:17 - Start
+2020-04-28 17:48:44 [main] INFO  ClientMenu:63 - Changes saved
+2020-04-28 17:50:14 [main] INFO  Main:17 - Start
+2020-04-28 17:50:49 [main] INFO  Operations:122 - Payment succeed
+2020-04-28 17:53:00 [main] INFO  Main:17 - Start
+2020-04-28 17:58:23 [main] INFO  Main:17 - Start
+2020-04-28 17:58:46 [main] INFO  ClientMenu:63 - Changes saved
+2020-04-28 17:59:12 [main] INFO  ClientMenu:63 - Changes saved
+2020-04-28 18:26:30 [main] INFO  Main:17 - Start
+2020-04-28 18:30:14 [main] INFO  OrderDaoImpl:90 - Order is deleted
+2020-04-28 18:30:31 [main] INFO  AdminMenu:50 - Changes saved
+2020-04-28 18:31:02 [main] INFO  Main:17 - Start
+2020-04-28 18:32:18 [main] INFO  ChefMenu:36 - Dish was successfully added
+2020-04-28 18:33:11 [main] INFO  ChefMenu:45 - Changes saved
+2020-04-28 18:37:31 [main] INFO  Main:17 - Start
+2020-04-28 18:50:31 [main] INFO  Main:17 - Start
+2020-04-28 19:03:02 [main] INFO  Main:17 - Start
+2020-04-28 19:04:36 [main] INFO  OrderDaoImpl:62 - Order is created
+2020-04-28 19:11:19 [main] INFO  Main:17 - Start
+2020-04-28 19:14:00 [main] INFO  Main:17 - Start
+2020-04-28 19:14:36 [main] INFO  OrderDaoImpl:62 - Order is created
+2020-04-28 19:15:14 [main] INFO  Operations:128 - Payment succeed
+2020-04-28 19:15:20 [main] INFO  ClientMenu:55 - Changes saved
+2020-04-28 19:21:24 [main] INFO  Main:11 - Start
+2020-04-28 19:23:21 [main] INFO  ClientMenu:55 - Changes saved

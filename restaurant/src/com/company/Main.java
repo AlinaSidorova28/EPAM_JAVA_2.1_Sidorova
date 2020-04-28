@@ -5,13 +5,13 @@ import com.company.reader.InfoReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
-
 public class Main {
     static Logger logger = LogManager.getLogger();
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         logger.info("Start");
-
+        /*Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        System.out.println(str.matches("(\\d+:\\d+\\s?)+"));*/
         MainMenu mainMenu = new MainMenu();
         InfoReader reader = new InfoReader();
         int n = 1;
@@ -26,6 +26,7 @@ public class Main {
             }
             mainMenu.makeOperations(n);
         }
+        /*Operations oper = new Operations();
+        oper.readOrder(8);*/
     }
-
 }
