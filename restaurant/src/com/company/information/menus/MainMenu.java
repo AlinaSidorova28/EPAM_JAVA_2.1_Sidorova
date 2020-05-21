@@ -1,20 +1,12 @@
 package com.company.information.menus;
 
 import com.company.controller.Authorizer;
-import com.company.dao.OrderDao;
 import com.company.reader.InfoReader;
 import com.company.users.Administrator;
 import com.company.users.Client;
 import com.company.users.User;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.sql.SQLException;
 
 public class MainMenu {
-    private static OrderDao orderDao;
-    static Logger logger = LogManager.getLogger();
-
     public void showMainMenu() {
         System.out.println("----------");
         System.out.println("Choose an option:");
@@ -23,17 +15,17 @@ public class MainMenu {
         System.out.print(">> ");
     }
 
-    public void makeOperations(int n) throws SQLException {
+    public void makeOperations(int n) {
         switch (n) {
             case 1:
                 this.initMenuForUser();
                 break;
             case 2:
-                break;
+                System.exit(0);
         }
     }
 
-    public void initMenuForUser() throws SQLException {
+    public void initMenuForUser() {
         Authorizer authorizer = new Authorizer();
         User authorizedUser = authorizer.logIn();
         Client currentClient = new Client(authorizedUser);

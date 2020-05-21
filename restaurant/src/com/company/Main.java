@@ -7,11 +7,8 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     static Logger logger = LogManager.getLogger();
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         logger.info("Start");
-        /*Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
-        System.out.println(str.matches("(\\d+:\\d+\\s?)+"));*/
         MainMenu mainMenu = new MainMenu();
         InfoReader reader = new InfoReader();
         int n = 1;
@@ -26,7 +23,5 @@ public class Main {
             }
             mainMenu.makeOperations(n);
         }
-        /*Operations oper = new Operations();
-        oper.readOrder(8);*/
     }
 }

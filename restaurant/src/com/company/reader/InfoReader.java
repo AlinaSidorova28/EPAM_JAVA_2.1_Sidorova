@@ -4,13 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.InputStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.Scanner;
 
 public class InfoReader {
-    static Logger logger = LogManager.getLogger();
     public static final String REGEX = "[0-4]";
     public static final String REGEX_NATURAL = "\\d+";
     public static final String REGEX_STRING = "\\s+";
@@ -42,7 +38,7 @@ public class InfoReader {
         return n;
     }
 
-    public String[] readDish(InputStream input) throws SQLException {
+    public String[] readDish(InputStream input) {
         Scanner scanner = new Scanner(input);
         String line = scanner.nextLine();
         line = line.trim();
@@ -55,7 +51,7 @@ public class InfoReader {
         return dishes;
     }
 
-    public Connection SQLReader() {
+    /*public Connection SQLReader() {
         // Connect to database
         String hostName = "french-restaurant.database.windows.net";
         String dbName = "restaurant";
@@ -71,7 +67,7 @@ public class InfoReader {
             logger.error(e);
         }
         return connection;
-    }
+    }*/
 
 
     public String readString(InputStream input) {

@@ -1,73 +1,59 @@
 package com.company.information;
 
+import com.company.persistence.Dishes_DB;
 import com.company.reader.InfoReader;
+import com.company.util.HibernateSessionFactoryUtil;
+import org.hibernate.Session;
 
-import java.sql.*;
+import java.util.List;
 
 public class PriceMenu {
     public InfoReader reader = new InfoReader();
-    public Connection connection = reader.SQLReader();
-    public Statement statement = connection.createStatement();
+    Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
 
-    public PriceMenu() throws SQLException {
+    public PriceMenu() {
     }
 
-    public void showMenu() throws SQLException {
-        ResultSet result = statement.executeQuery("SELECT * FROM Dishes");
-
-        // Print results from select statement
+    public void showMenu() {
+        List<Dishes_DB> dishes = (List<Dishes_DB>) session.createQuery("From Dishes_DB").list();
         System.out.println("Menu:");
         System.out.println("----------");
-        while (result.next())
-        {
+        for (Dishes_DB d : dishes) {
             System.out.println(String.format("%d. %s %4.2f",
-                    result.getInt("dishId"),
-                    result.getString("name"),
-                    result.getDouble("price")));
-            //this.menu.put(result.getString("name"), result.getDouble("price"));
+                    d.getDishId(),
+                    d.getName(),
+                    d.getPrice()));
         }
-        //connection.close();
     }
 
-    public void showByKeyWord() throws SQLException {
+    public void showByKeyWord() {
         System.out.println("Input part of dish name: ");
         String dishName = reader.readString(System.in);
-
-        String sql = "SELECT * FROM Dishes WHERE name LIKE ?";
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        preparedStatement.setString(1, '%' + dishName + '%');
-        ResultSet resultSet = preparedStatement.executeQuery();
+        List<Dishes_DB> dishes = (List<Dishes_DB>) session.createQuery("From Dishes_DB d WHERE name LIKE '%" + dishName + "%'").list();
         System.out.println("Dishes:");
-        while (resultSet.next())
-        {
+        for (Dishes_DB d : dishes) {
             System.out.println(String.format("%d. %s %4.2f",
-                    resultSet.getInt("dishId"),
-                    resultSet.getString("name"),
-                    resultSet.getDouble("price")));
+                    d.getDishId(),
+                    d.getName(),
+                    d.getPrice()));
         }
-        //connection.close();
     }
 
-    public void showInPriceRange() throws SQLException {
+    public void showInPriceRange() {
         System.out.println("Input price range: ");
         System.out.print("Start: ");
         double startPrice = reader.readDouble(System.in);
         System.out.print("End: ");
         double endPrice = reader.readDouble(System.in);
 
-        String sql = "SELECT * FROM Dishes WHERE price BETWEEN ? AND ?";
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        preparedStatement.setDouble(1, startPrice);
-        preparedStatement.setDouble(2, endPrice);
-        ResultSet resultSet = preparedStatement.executeQuery();
-        System.out.println("Dishes:");
-        while (resultSet.next())
-        {
+        String sql = "From Dishes_DB d " +
+                    "WHERE price BETWEEN " + startPrice + "AND " + endPrice;
+        List<Dishes_DB> dishes = (List<Dishes_DB>) session.createQuery(sql).list();
+        for (Dishes_DB d : dishes) {
             System.out.println(String.format("%d. %s %4.2f",
-                    resultSet.getInt("dishId"),
-                    resultSet.getString("name"),
-                    resultSet.getDouble("price")));
+                    d.getDishId(),
+                    d.getName(),
+                    d.getPrice()));
         }
-        //connection.close();
     }
 }

@@ -1,42 +1,42 @@
 package com.company.operations;
 
+import com.company.persistence.*;
 import com.company.reader.InfoReader;
+import com.company.util.HibernateSessionFactoryUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
 
-import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Operations {
     static Logger logger = LogManager.getLogger();
     public InfoReader reader = new InfoReader();
-    public Connection connection = reader.SQLReader();
-    public Statement statement = connection.createStatement();
+    Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
 
-    public Operations() throws SQLException {
+    public Operations() {
     }
 
-    public void addDishToPriceMenu() throws SQLException {
-        String sql = "INSERT INTO Dishes(dishId, name, price)" +
-                "SELECT MAX(dishId)+1, ?, ? FROM Dishes";
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+    public void addDishToPriceMenu() {
         System.out.println("Input name of new dish: ");
         String dishName = reader.readString(System.in);
-
         System.out.println("Input price of new dish: ");
         double dishPrice = reader.readDouble(System.in);
-        preparedStatement.setString(1, dishName);
-        preparedStatement.setDouble(2, dishPrice);
-        preparedStatement.executeUpdate();
+
+        String sql = "INSERT INTO Dishes_DB(dishId, name, price) " +
+                "SELECT MAX(dishId)+1, '" + dishName + "', " + dishPrice + " FROM Dishes_DB";
+        session.createQuery(sql).executeUpdate();
     }
 
-    public int chooseIdentifier() throws SQLException {
-        ResultSet result = statement.executeQuery("SELECT orderId FROM Orders ");
+    public int chooseIdentifier() {
+        ArrayList<Orders_DB> orders = (ArrayList<Orders_DB>) session.createQuery("FROM Orders_DB").list();
         ArrayList<Integer> identifiers = new ArrayList<>();
-        while(result.next()) {
-            identifiers.add(result.getInt(1));
+        for (Orders_DB o : orders) {
+            identifiers.add(o.getOrderId());
         }
+
         System.out.println("Input an id: ");
         int id = reader.readId(System.in);
         while(!identifiers.contains(id)) {
@@ -46,59 +46,47 @@ public class Operations {
         return id;
     }
 
-    public void showClientsOrders(int id) throws SQLException {
-        ResultSet result = statement.executeQuery("SELECT orderId FROM CO WHERE clientId=" + id);
-        if(!result.next()) {
+    public void showClientsOrders(int id) {
+        List<ClientOrder_DB> orders = (List<ClientOrder_DB>) session.createQuery("From ClientOrder_DB WHERE clientId=" + id).list();
+        if (orders.size() == 0) {
             System.out.println("You have no orders yet");
-        }
-        else {
-            result = statement.executeQuery("SELECT orderId FROM CO WHERE clientId=" + id);
-            while (result.next()) {
-                readOrder(result.getInt(1));
+        } else {
+            for (ClientOrder_DB ord : orders) {
+                readOrder(ord.getOrderId());
             }
         }
     }
 
-    public void readOrder(int id) throws SQLException {
-        Statement statement = connection.createStatement();
-        String sql = "SELECT o.orderId, d.name, DO.dishAmount, o.total, o.paid\n" +
-                     "FROM DO\n" +
-                     "INNER JOIN Dishes d ON DO.dishId = d.dishId\n" +
-                     "INNER JOIN Orders o ON DO.orderId = o.orderId\n" +
-                     "WHERE o.orderId=" + id;
-        ResultSet result = statement.executeQuery(sql);
-        if (result.next()) {
-            int orderId =  result.getInt("orderId");
-            double total =  result.getDouble("total");
-            String paid = result.getString("paid");
-
+    public void readOrder(int id) {
+        String sql = " FROM DishOrder_DB DO, Dishes_DB d, Orders_DB o " +
+                " WHERE DO.dishId = d.dishId " +
+                " AND DO.orderId = o.orderId " +
+                " AND o.orderId=" + id;
+        List<Orders_DB> order = (List<Orders_DB>) session.createQuery("SELECT " + "o" + sql).list();
+        List<DishOrder_DB> dishOrder = (List<DishOrder_DB>) session.createQuery("SELECT " + "DO" + sql).list();
+        List<Dishes_DB> dishes = (List<Dishes_DB>) session.createQuery("SELECT " + "d" + sql).list();
+        if (order.size() != 0) {
             System.out.println("----------");
             System.out.println("Order: ");
-            System.out.print(String.format("id: %d", orderId) + ", dishes{ ");
-            System.out.print(result.getString("name") + " - " + result.getInt("dishAmount") + " pieces ");
-            while (result.next()) {
-                String dishes = result.getString("name");
-                int amount = result.getInt("dishAmount");
-                System.out.print(dishes + " - " + amount + " pieces ");
+            System.out.print(String.format("id: %d", order.get(0).getOrderId()) + ", dishes{ ");
+            for (int i = 0; i < dishes.size(); i++) {
+                System.out.print(dishes.get(i).getName() + " - " + dishOrder.get(i).getDishAmount() + " pieces ");
             }
-            System.out.println(String.format("}, total: %4.2f", total) + ", paid: " + paid);
+            System.out.println(String.format("}, total: %4.2f", order.get(0).getTotal()) + ", paid: " + order.get(0).getPaid());
             System.out.println("----------");
-        }
-        else {
-            System.out.println("You have no orders to update");
         }
     }
 
-    public int findUnpaidOrder() throws SQLException {
-        ResultSet result = statement.executeQuery("SELECT orderId FROM Orders WHERE paid = 'false'");
+    public int findUnpaidOrder() {
+        List<Orders_DB> orders = (List<Orders_DB>) session.createQuery("From Orders_DB WHERE paid = 'false'").list();
         int id = 0;
-        if(result.next()) {
-            id = result.getInt(1);
+        if (orders.size() != 0) {
+            id = orders.get(0).getOrderId();
         }
         return id;
     }
 
-    public void payForOrder() throws SQLException {
+    public void payForOrder() {
         if(findUnpaidOrder() == 0) {
             System.out.println("You have no orders to pay for");
         }
@@ -111,27 +99,24 @@ public class Operations {
                 System.out.print("Input 'pay' to pay: ");
                 key = scanner.nextLine();
             }
-            String sql = "UPDATE Orders SET paid ='true' WHERE paid = 'false' ";
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.executeUpdate();
+            session.createQuery("UPDATE Orders_DB SET paid ='true' WHERE paid = 'false'").executeUpdate();
             logger.info("Payment succeed");
         }
     }
 
-    public void showClients() throws SQLException {
-        ResultSet result = statement.executeQuery("SELECT * FROM Clients");
-
+    public void showClients() {
+        List<Clients_DB> clients = (List<Clients_DB>) session.createQuery("From Clients_DB").list();
         System.out.println("Clients:");
         System.out.println("----------");
-        while (result.next())
-        {
+        for (Clients_DB cl : clients) {
             System.out.println(String.format("id: %d, name: %s",
-                    result.getInt("clientId"),
-                    result.getString("name")));
+                    cl.getClientId(),
+                    cl.getName()));
         }
     }
 
-    public void closeConnection() throws SQLException {
-        connection.close();
+    public void closeConnection() {
+        session.close();
+        logger.info("Session closed");
     }
 }

@@ -7,8 +7,6 @@ import com.company.users.Client;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.sql.SQLException;
-
 public class ClientMenu {
     Client client;
 
@@ -30,7 +28,7 @@ public class ClientMenu {
         System.out.print(">> ");
     }
 
-    public void makeOperations(int n) throws SQLException {
+    public void makeOperations(int n) {
         orderDao = new OrderDaoImpl();
         Operations operation = new Operations();
 

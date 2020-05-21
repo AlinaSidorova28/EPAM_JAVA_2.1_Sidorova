@@ -5,8 +5,6 @@ import com.company.operations.Operations;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.sql.SQLException;
-
 public class ChefMenu {
     static Logger logger = LogManager.getLogger();
 
@@ -21,10 +19,9 @@ public class ChefMenu {
         System.out.print(">> ");
     }
 
-    public void makeOperations(int n) throws SQLException {
+    public void makeOperations(int n) {
         Operations operation = new Operations();
         PriceMenu priceMenu = new PriceMenu();
-        int id;
         switch (n) {
             case 1:
                 priceMenu.showMenu();

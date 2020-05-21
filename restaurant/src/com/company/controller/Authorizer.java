@@ -1,34 +1,30 @@
 package com.company.controller;
 
-import com.company.reader.InfoReader;
+import com.company.persistence.Clients_DB;
 import com.company.users.Administrator;
 import com.company.users.Chef;
 import com.company.users.Client;
 import com.company.users.User;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.company.util.HibernateSessionFactoryUtil;
+import org.hibernate.Session;
 
-import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Authorizer {
+    Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
 
-    static Logger logger = LogManager.getLogger();
-    public InfoReader reader = new InfoReader();
-    public Connection connection = reader.SQLReader();
-    public Statement statement = connection.createStatement();
-
-    public Authorizer() throws SQLException {
+    public Authorizer() {
     }
 
-    public Client findClientByNameAndPassword(String nickName, String password) throws SQLException {
+    public Client findClientByNameAndPassword(String nickName, String password) {
         ArrayList<Client> clients = new ArrayList<>();
-        ResultSet result = statement.executeQuery("SELECT * FROM Clients");
-        while (result.next())
-        {
-            clients.add(new Client(result.getString("name"), result.getString("password"), result.getInt("clientId")));
+
+        List<Clients_DB> clients_dbs = (List<Clients_DB>) session.createQuery("SELECT c FROM Clients_DB c").list();
+        for (Clients_DB c : clients_dbs) {
+            clients.add(new Client(c.getName(), c.getPassword(), c.getClientId()));
         }
 
         for(Client item : clients) {
@@ -53,22 +49,17 @@ public class Authorizer {
         System.out.println("Welcome to our restaurant, " + nickName + "!");
 
         addClientToTable(newClient);
-        connection.close();
         return newClient;
     }
 
-    private void addClientToTable(Client newClient) throws SQLException {
-        String sql = "INSERT INTO Clients(clientId, name, password)" +
-                "VALUES (?, ?, ?)";
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        preparedStatement.setInt(1, newClient.getId());
-        preparedStatement.setString(2, newClient.getName());
-        preparedStatement.setString(3, newClient.getPassword());
-        preparedStatement.executeUpdate();
-        connection.close();
+    private void addClientToTable(Client newClient) {
+        String sql = "INSERT INTO Clients_DB(clientId, name, password)" +
+                    " SELECT distinct " + newClient.getId() + ", '" + newClient.getName() + "', '" + newClient.getPassword() +
+                    "' FROM Clients_DB";
+        session.createQuery(sql).executeUpdate();
     }
 
-    public User logIn() throws SQLException {
+    public User logIn() {
         String nickName, password;
         Scanner scanner = new Scanner(System.in);
 

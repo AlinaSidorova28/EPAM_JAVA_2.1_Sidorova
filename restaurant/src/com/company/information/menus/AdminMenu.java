@@ -7,8 +7,6 @@ import com.company.operations.Operations;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.sql.SQLException;
-
 public class AdminMenu {
     private static OrderDao orderDao;
     static Logger logger = LogManager.getLogger();
@@ -24,7 +22,7 @@ public class AdminMenu {
         System.out.print(">> ");
     }
 
-    public void makeOperations(int n) throws SQLException {
+    public void makeOperations(int n) {
         orderDao = new OrderDaoImpl();
         Operations operation = new Operations();
         int id;
